@@ -30,17 +30,15 @@
 
 
 
-let year = prompt("ведите год:");
+let year = +prompt('Введите год в формате 1234');
 
-let wes = year / 4;
 
-wes = wes - wes ;
+if(year % 4 == 0 || year % 400 == 0) {
 
-console.log(`${wes} это высокосный год`)
+    console.log(` ${year} високосный год `);
+    alert(` ${year} високосный год `);
 
-if (wes = 0){
-    wes = wes
-   console.log(`${year} это высокосный год`)
-}else{
-   console.log(`${year} это не высокосный год`)
+} else {
+    console.log(` ${year} не високосный год`);
+    alert(` ${year} не високосный год`);
 }
